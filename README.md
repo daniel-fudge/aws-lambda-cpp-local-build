@@ -1,5 +1,6 @@
 # aws-lambda-cpp-local-build
-This repo build a C++ Lambda function on a local workstation and then deploys it with the CLI. 
+This repo build a C++ Lambda function on a local workstation and then deploys it with the CLI.   
+A YouTube walk through of this repo can also be found [here](https://youtu.be/LaDrQqrrmrI).
 
  ## Install Some Dependencies
  ```bash
@@ -47,6 +48,7 @@ make install
 
 ## Build the Actual C++ Lambda Function
 ```bash
+git clone git@github.com:daniel-fudge/aws-lambda-cpp-local-build.git
 cd ~/aws-lambda-cpp-local-build
 mkdir build
 cd build
@@ -100,3 +102,4 @@ aws lambda invoke --function-name demo --cli-binary-format raw-in-base64-out --p
 - [C++ Sample Lab](https://github.com/awslabs/aws-lambda-cpp)
 - [AWS CLI - Invoke Lambda](https://docs.aws.amazon.com/cli/latest/reference/lambda/invoke.html#examples)
 - [AWS CLI - Payload Error](https://stackoverflow.com/questions/60310607/amazon-aws-cli-not-allowing-valid-json-in-payload-parameter)
+- [YouTube Walk Through](https://youtu.be/LaDrQqrrmrI)
